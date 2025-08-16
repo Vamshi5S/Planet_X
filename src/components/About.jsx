@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { IconBadge, RocketPro, StopwatchShieldPro, GlobeDotsPro } from "./icons";
+import { IconBadge, RocketPro, StopwatchShieldPro, GlobeDotsPro } from "./Icons";
 import RequestForm from "./RequestForm";
 
 
