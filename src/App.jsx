@@ -8,7 +8,7 @@ import HomePage, { Header, SearchResults } from "./components/HomePage";
 import About from "./components/About";
 import Capabilities from "./components/Capabilities";
 import Footer from "./components/Footer";
-import Ai from "./components/capabilities-offers/ai";
+import Ai from "./components/capabilities-offers/Ai";
 import AiDelivered from "./components/capabilities-offers/AiDelivered";
 import CloudInfrastructure from "./components/capabilities-offers/CloudInfrastructure";
 import DigitalApps from "./components/capabilities-offers/DigitalApps";
