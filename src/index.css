@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  width: 40px;
+  height: 40px;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* === Submit button hover effect === */
+.submit-btn {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+  border: 1px solid #22c55e; /* green-500 */
+  padding: 0.75rem 2rem;     /* py-3 px-8 */
+  font-weight: 500;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.submit-btn:hover { color: #064e3b; } /* dark green */
+
+.submit-btn .bg {
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg at 50% 50%, #4ade80 0%, #22d3ee 50%, #4ade80 100%);
+  transform: translate(-50%, -50%) scale(1.1) rotate(180deg);
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+.submit-btn:hover .bg {
+  transform: translate(0%, 0%) scale(1.1) rotate(0deg);
+}
+.submit-btn .label { position: relative; z-index: 1; }
+/* styles.css or globals.css */
+.hide-scroll {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
+.leader-perspective {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.leader-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leader-title {
+  padding-right: 40px;
+  border-right: 4px solid #000; /* Thicker middle line */
+}
+
+.leader-title h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.leader-text {
+  padding-left: 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .leader-content {
+    grid-template-columns: 1fr;
+  }
+  .leader-title {
+    border-right: none;
+    border-bottom: 4px solid #000;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .leader-text {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
