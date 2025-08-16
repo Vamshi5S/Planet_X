@@ -1,5 +1,5 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, HashRouter } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,10 +23,6 @@ import TravelTransportation from "./components/industries/TravelTransportation";
 import InsightsPage from "./components/InsightsPage";
 import Careers from "./components/Careers";
 import ContactUs from "./components/ContactUs";
-
-
-
-
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -86,9 +82,9 @@ function AppShell() {
 
 export default function App() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <AppShell />
-    </Router>
+    </>
   );
 }
