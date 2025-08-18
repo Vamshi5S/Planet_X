@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "react-scripts build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "node generate-sitemap.mjs"
+     "postbuild": "node generate-sitemap.mjs"
   },
   "dependencies": {
     "aos": "^2.3.4",
