@@ -12,7 +12,7 @@ export default function Footer() {
   
           {/* Center */}
           <div className="mt-4 md:mt-0">
-            <p className="text-gray-400 text-sm">📧 vamshis954@gmail.com</p>
+            <p className="text-gray-400 text-sm">📧 contact@planetxsolutions.com</p>
           </div>
   
           {/* Right side */}

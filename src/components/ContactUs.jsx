@@ -111,7 +111,7 @@ export default function ContactUs() {
           >
             <div className="grid sm:grid-cols-2 gap-6">
               <InfoLine label="Name" value="Vamshi Krishna" />
-              <InfoLine label="Email" value="vamshis954@gmail.com" />
+              <InfoLine label="Email" value="contact@planetxsolutions.com" />
               <InfoLine label="Address" value="6 Village Dr, Cape Girardeau, MO, United States, 63701" />
             </div>
           </AccordionItem>
